@@ -1,0 +1,18 @@
+SMELL		| REFACTOR
+-----------------------------------------------
+Duplicated Code		| 
+Long Method		| 
+Large Class		| 
+Long Parameter List	| 
+Divergent Change	| 
+Shotgun Surgery		| 
+Feature Envy		| 
+Data Clamps		| 
+Primitive Obsession	| 
+Switch Statements	| 
+Lazy Class		| 
+Speculative Generality	| 
+Temporary Field		| 
+Data Class		| 
+Comments		| 
+Procedural Code		| 
