@@ -1,18 +1,63 @@
-SMELL		| REFACTOR
------------------------------------------------
-Duplicated Code		| 
-Long Method		| 
-Large Class		| 
-Long Parameter List	| 
-Divergent Change	| 
-Shotgun Surgery		| 
-Feature Envy		| 
-Data Clamps		| 
-Primitive Obsession	| 
-Switch Statements	| 
-Lazy Class		| 
-Speculative Generality	| 
-Temporary Field		| 
-Data Class		| 
-Comments		| 
-Procedural Code		| 
+SMELL			| REFACTOR
+--------------------------------------------------
+Duplicated Code		| Extract Method
+			| Pull Up Field
+			| Form Template Method
+			| Substitute Algorithm
+			|
+Long Method		| Extract Method
+			| Move Method
+			|
+Large Class		| Extract Class
+			| Extract Subclass
+			|
+Long Parameter List	| Replace Parameter With Method
+			| Preserve Whole Object
+			| Introduce Parameter Object
+			|
+Divergent Change	| Extract Class
+			|
+Shotgun Surgery		| Move Method
+			| Move Field
+			| Inline Class
+			|
+Feature Envy		| Move Method
+			| Extract Method
+			|
+Data Clamps		| Extract Class
+			| Introduce Parameter Object
+			| Preserve Whole Object
+			|
+Primitive Obsession	| Replace Data Value With Object
+			| Replace Type Code With Class
+			| Replace Type Code With Subclass
+			| Replace Type Code With State/Strategy
+			|
+Switch Statements	| Extract Method
+			| Move Method
+			| Replace Type Code With Subclass
+			| Replace Type Code With State/Strategy
+			| Replace Conditional With Polymorphism
+			| Introduce NullObject
+			|
+Lazy Class		| Collapse Hierarchy	
+			| Inline Class
+			|
+Speculative Generality	| Collapse Hierarchy	
+			| Inline Class
+			| Remove Parameter
+			| Rename Method
+			|
+Temporary Field		| Extract Subclass
+			| Introduce NullObject
+			|
+Data Class		| Encapsulate Field
+			| Encapsulate Collection
+			| Remove Setting Method
+			|
+Comments		| Extract Method
+			| Preserve Whole Object
+			| Introduce Parameter Object
+			|
+Procedural Code		| Big Refactoring
+			|
