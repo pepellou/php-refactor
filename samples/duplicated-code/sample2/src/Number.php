@@ -36,7 +36,8 @@ class Number {
 		$exp
 	) {
 		$factor = $this->_clone();
-		while ($exp-- > 1)
+		$this->values = array(1);
+		while ($exp-- > 0)
 			$this->multiply($factor);
 		return $this;
 	}
@@ -79,7 +80,7 @@ class Number {
 		for ($index = 0; $index < count($this->values); $index++) {
 			$this->values[$index] = $this->values[$index] + $other->values[$index];
 		}
-		while ($this->values[count($this->values) - 1] == 0) {
+		while (count($this->values) > 0 && $this->values[count($this->values) - 1] == 0) {
 			unset($this->values[count($this->values) - 1]);
 		}
 		$index = 0;
